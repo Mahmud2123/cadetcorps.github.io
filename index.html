@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type ="text/css" href ="index.css" media="all"/>
+</head>
+<body>
+ <form action="" method="post">
+  <div class="imgcontainer">
+    <img src="index.jpeg" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input id="uname" type="text" placeholder="Enter Username" name="uname" value="" > <br>
+
+    <label for="psw"><b>Password</b></label>
+    <input id="psw" type="password" placeholder="Enter Password" name="psw"  >
+
+    <button id="sub" type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="register"> <a href="membershipform.html">Sign Up!</a> </button>
+    <span role="alert" id="error" aria-hidden="true"></span>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form>
+<script>
+let submit = document.getElementById("sub");
+submit.addEventListener("click", validate);
+function validate(e){
+e.prevenyDefault();
+let username = document.getElementById("uname");
+let valid = true;
+
+if(!username.value){
+ eError = document.getElementById("error");
+eError.classList.add("visible");
+username.classList.Add("invalid");
+eError.setAttribute("aria-hidden", false);
+eError.setAttribute("aria-hidden", true);
+
+
+
+
+}
+return valid;
+
+}
+
+
+</script>
+</form>
+</body>
+</html>
