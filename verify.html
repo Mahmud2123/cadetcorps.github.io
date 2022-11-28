@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+  <title>TOPS .:: Home | Student Portal </title>
+  <!-- General CSS Files -->
+  <link rel="stylesheet" href="http://student.tops.edu.ng:82/portal/assets/css/app.min.css">
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="http://student.tops.edu.ng:82/portal/assets/css/style.css">
+  <link rel="stylesheet" href="http://student.tops.edu.ng:82/portal/assets/css/components.css">
+  <!-- Custom style CSS -->
+  <link rel="stylesheet" href="http://student.tops.edu.ng:82/portal/assets/css/custom.css">
+
+<style>
+
+.example5 {
+
+
+ font-size:18px;
+ font-weight:bold;
+
+}
+
+
+
+</style>
+</head>
+
+<body>
+
+  <div id="app">
+    <div class="main-wrapper">
+
+
+      <!-- Main Content -->
+
+            <div class="main">
+              <section class="section">
+
+
+                 <div class="row">
+                    <div class="col-12">
+
+                      <div class="card">
+                        <div class="card-header">
+      <div align = "center">
+                          <h1><img src="index.jpeg" alt="School Logo" width="100" height="100" class="responsive-img valign profile-image-login">CADET INITIATIVE SAKI AREA-D </h1> </div>
+                        </div>
+                        <div class="card-body">
+                          <nav class="navbar navbar-expand-lg bg-success">
+                            <a class="navbar-brand" href="#">MEMBER PORTAL</a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                              <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                              <ul class="navbar-nav">
+                                <li class="nav-item active">
+                                  <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="verify.html">Verify Account</a>
+                                </li>
+                               
+                                  <li class="nav-item">
+                                  <a class="nav-link" href="forget.html">Forget Password</a>
+                                </li>
+
+                                
+                              </ul>
+                            </div>
+                          </nav>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+
+
+<body>
+  <div class="container-scroller">
+    <div class="container-fluid page-body-wrapper full-page-wrapper">
+      <div class="content-wrapper d-flex align-items-center auth px-0">
+        <div class="row w-100 mx-0">
+        <div class="col-lg-5 mx-auto">
+            <div class="auth-form-light text-left py-5 px-4 px-sm-5">
+               
+              <h4   align="center">Account Verification</h4>
+          <form class="auth-form login-form" action="h" method="post">   
+           
+          
+         <div class="mb-3">
+                                     
+                                    <select name="stdtype" class="form-control signup-password" id="inputSelect3" required >
+									   
+									   <option value="">- Select Member Type -</option>
+								     <option value="new"> New Member</option>
+                                      <option value="returning">Existing Member</option>
+                                    </select>
+									</div>
+                            
+                            
+							<div class="email mb-3">
+								<label class="sr-only" for="signin-email">Registration Number</label>
+								<input id="signin-email" name="regno" type="text" class="form-control signin-email" placeholder="Service / Form Number" required="required" autocomplete="off">
+							</div><!--//form-group-->
+							<div class="password mb-3">
+								
+								<div class="extra mt-3 row justify-content-between">
+									<i>* Returning - Reg No | Service - No</i>
+									
+								</div><!--//extra-->
+							</div><!--//form-group-->
+							<div class="text-center">
+								<button type="submit" class="btn btn-success btn-lg btn-block">Verify</button>
+							</div>
+						</form><br><div align="center"> <a href="http://student.tops.edu.ng:82/portal/portal/login"> <strong> &lt;&lt; Already Verified? Click Here</strong> </a> </div>
+            <HR>
+  <div align="center">
+                  <b >Powered by CADETS &copy; 2021</b>
+               </div>	
+          </div>
+            </div>
+          
+  
+          
+            </div>
+            
+            
+          </div>
+        </div>
+      </div>
+      <!-- content-wrapper ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+ <script>
+// Set the date we're counting down to
+var countDownDate = new Date("September 11, 2022 23:59:59").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = "Payment of Fees Closes in:  <br> <br> " + days + "Days " + hours + "Hrs "
+  + minutes + "Mins " + seconds + "Secs ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "Registration is CLOSED";
+  }
+}, 1000);
+</script>
