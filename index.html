@@ -1,57 +1,163 @@
+
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+  <title>CADETS:: Home Member Portal </title>
+  <!-- General CSS Files -->
+  <link rel="stylesheet" href="details.css">
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="http://student.tops.edu.ng:82/portal/assets/css/style.css">
+  <link rel="stylesheet" href="http://student.tops.edu.ng:82/portal/assets/css/components.css">
+  <!-- Custom style CSS -->
+  <link rel="stylesheet" href="http://student.tops.edu.ng:82/portal/assets/css/custom.css">
+
+<style>
+
+.example5 {
+
+
+ font-size:18px;
+ font-weight:bold;
+
+}
+
+
+
+</style>
+</head>
 
 <body>
- <form action="" method="post">
-  <div class="imgcontainer">
-    <img src="index.jpeg" alt="Avatar" class="avatar">
+
+  <div id="app">
+    <div class="main-wrapper">
+
+
+      <!-- Main Content -->
+
+            <div class="main">
+              <section class="section">
+
+
+                 <div class="row">
+                    <div class="col-12">
+
+                      <div class="card">
+                        <div class="card-header">
+      <div align = "center">
+                          <h1><img src="index.jpeg" alt="School Logo" width="100" height="100" class="responsive-img valign profile-image-login"> CADET INITIATIVE SAKI AREA-D</h1> </div>
+                        </div>
+                        <div class="card-body">
+                          <nav class="navbar navbar-expand-lg bg-success">
+                            <a class="navbar-brand" href="#">MEMBER PORTAL</a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                              <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                              <ul class="navbar-nav">
+                                <li class="nav-item active">
+                                  <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="verify.html">Verify Account</a>
+                                </li>
+                               
+                                  <li class="nav-item">
+                                  <a class="nav-link" href="forget.html">Forget Password</a>
+                                </li>
+
+                                
+                              </ul>
+                            </div>
+                          </nav>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+
+
+<body>
+  <div class="container-scroller">
+    <div class="container-fluid page-body-wrapper full-page-wrapper">
+      <div class="content-wrapper d-flex align-items-center auth px-0">
+        <div class="row w-100 mx-0">
+        <div class="col-lg-5 mx-auto">
+            <div class="auth-form-light text-left py-5 px-4 px-sm-5">
+               
+               
+              <h4   align="center">Student Login</h4>
+              <form class="pt-3" action="http://student.tops.edu.ng:82/portal/account/login" method="post">
+                <div class="form-group">
+                  <input id="signin-email" name="regno" type="text" class="form-control signin-email" placeholder="Service Number" required="required" autocomplete = "off">
+                </div>
+                <div class="form-group">
+                  <input id="signin-password" name="passkey" type="password" class="form-control signin-password" placeholder="Password" required="required">
+                </div>
+                <div class="mt-3">
+                  
+                  
+                  <button type="submit"   class="btn btn-success btn-lg btn-block">LOGIN</button>
+                </div>
+                <div class="my-2 d-flex justify-content-between align-items-center">
+                  <div class="form-check">
+                    <label class="form-check-label text-muted">
+                     
+                    </label>
+                  </div>
+                  <a href="forget.html" class="auth-link text-black">Forgot password?</a>
+                </div>
+                 
+                  <HR>
+  <div align="center" id="">
+                  <b >Powered by CADETS &copy; 2022</b>
+               </div>	
+              </form>
+            </div>
+          
+
+            
+          </div>
+          
+            </div>
+            
+            
+          </div>
+        </div>
+      </div> 
+      <!-- content-wrapper ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
   </div>
+ <script>
+// Set the date we're counting down to
+var countDownDate = new Date("DECEMBER 11, 2022 23:59:59").getTime();
 
-  <div class="container">
-    <label for="uname"><b>Username</b></label>
-    <input id="uname" type="text" placeholder="Enter Username" name="uname" value="" > <br>
+// Update the count down every 1 second
+var x = setInterval(function() {
 
-    <label for="psw"><b>Password</b></label>
-    <input id="psw" type="password" placeholder="Enter Password" name="psw"  >
-
-    <button id="sub" type="submit">Login</button>
-    <label>
-      <input type="checkbox" checked="checked" name="remember"> Remember me
-    </label>
-  </div>
-
-  <div class="container" style="background-color:#f1f1f1">
-    <button type="button" class="register"> <a href="membershipform.html">Sign Up!</a> </button>
-    <span role="alert" id="error" aria-hidden="true"></span>
-    <span class="psw">Forgot <a href="#">password?</a></span>
-  </div>
-</form>
-<script>
-let submit = document.getElementById("sub");
-submit.addEventListener("click", validate);
-function validate(e){
-e.prevenyDefault();
-let username = document.getElementById("uname");
-let valid = true;
-
-if(!username.value){
- eError = document.getElementById("error");
-eError.classList.add("visible");
-username.classList.Add("invalid");
-eError.setAttribute("aria-hidden", false);
-eError.setAttribute("aria-hidden", true);
-
-
-
-
-}
-return valid;
-
-}
-
-
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = "Payment of Fees Closes in:  <br> <br> " + days + "Days " + hours + "Hrs "
+  + minutes + "Mins " + seconds + "Secs ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "Registration is CLOSED";
+  }
+}, 1000);
 </script>
-</form>
-</body>
-</html>
